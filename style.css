@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+
+  background-color: rgb(21, 20, 20);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: rgb(106, 106, 106);
+
+  animation: fade 500ms;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px 5px 0;
+
+  background-color: rgb(106, 106, 106);
+  /* border: 1px solid rgb(106, 106, 106); */
+  border-radius: 5px;
+
+  display: inline-block;
+
+  animation: fade 500ms;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.o {
+  position: relative;
+}
+
+.o:after {
+  content: "\26AB";
+  font-size: 50px;
+  line-height: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  content: "\2716";
+  font-size: 50px;
+  line-height: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.btn {
+  width: 300px;
+  padding: 15px;
+  margin-top: 40px;
+
+  font-size: 1rem;
+
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+
+  background-color: rgb(69, 68, 68);
+
+  transition: background-color 200ms;
+
+  animation: fade 500ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+
+  background-color: rgba(106, 104, 104, 0.988);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
